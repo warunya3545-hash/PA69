@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PA Portfolio 2569 | วรัญญา นันชม</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar">
+        <div class="profile-zone">
+            <div class="avatar-wrapper">
+                <img src="126920.jpg" alt="ครูวรัญญา" class="avatar">
+            </div>
+            <h3>นางสาววรัญญา นันชม</h3>
+            <p>ตำแหน่งครู โรงเรียนบ้านปางหมิ่น</p>
+            <span class="status-badge">Active PA 2569</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#dashboard" class="active"><i class="fas fa-th-large"></i> แผงควบคุมผลงาน</a></li>
+            <li><a href="#about"><i class="fas fa-user-tie"></i> ข้อมูลพื้นฐาน</a></li>
+            <li><a href="#performance"><i class="fas fa-chart-line"></i> ผลการดำเนินงาน</a></li>
+            <li><a href="#achievements"><i class="fas fa-award"></i> รางวัลและเกียรติยศ</a></li>
+            <li><a href="#gallery"><i class="fas fa-photo-video"></i> คลังภาพกิจกรรม</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <p>© 2026 Waranya Nanchom</p>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Dashboard Header -->
+        <header id="dashboard" class="top-header">
+            <div class="welcome-text">
+                <h1>Executive Summary Dashboard</h1>
+                <p>รายงานผลสัมฤทธิ์การปฏิบัติงานตามข้อตกลงในการพัฒนางาน (PA)</p>
+            </div>
+            <div class="header-tools">
+                <div class="date-chip"><i class="far fa-calendar-alt"></i> ปีงบประมาณ 2569</div>
+            </div>
+        </header>
+
+        <!-- KPI Grid -->
+        <section class="kpi-container">
+            <div class="kpi-card accent-blue">
+                <div class="kpi-icon"><i class="fas fa-clock"></i></div>
+                <div class="kpi-data">
+                    <span class="kpi-value">25</span>
+                    <span class="kpi-label">ชม. สอน/สัปดาห์</span>
+                </div>
+            </div>
+            <div class="kpi-card accent-purple">
+                <div class="kpi-icon"><i class="fas fa-user-graduate"></i></div>
+                <div class="kpi-data">
+                    <span class="kpi-value">100%</span>
+                    <span class="kpi-label">ผ่านเกณฑ์ตัวชี้วัด</span>
+                </div>
+            </div>
+            <div class="kpi-card accent-gold">
+                <div class="kpi-icon"><i class="fas fa-star"></i></div>
+                <div class="kpi-data">
+                    <span class="kpi-value">#73</span>
+                    <span class="kpi-label">รางวัลศิลปหัตถกรรม</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infographic Section 1: About -->
+        <section id="about" class="content-section">
+            <div class="section-header">
+                <h2><i class="fas fa-info-circle"></i> ข้อมูลทั่วไปและประวัติการศึกษา</h2>
+            </div>
+            <div class="about-flex">
+                <div class="bio-card shadow-sm">
+                    <div class="bio-item">
+                        <span class="label">ชื่อ-นามสกุล:</span>
+                        <span class="val">นางสาววรัญญา นันชม</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="label">วุฒิการศึกษา:</span>
+                        <span class="val">ปริญญาตรี คอมพิวเตอร์ธุรกิจ</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="label">สถาบัน:</span>
+                        <span class="val">มหาวิทยาลัยราชภัฏอุตรดิตถ์</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="label">สังกัด:</span>
+                        <span class="val">สพป.อุตรดิตถ์ เขต 1</span>
+                    </div>
+                </div>
+                <div class="chart-card shadow-sm">
+                    <h3>สัดส่วนภาระงานสอน</h3>
+                    <canvas id="workloadChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infographic Section 2: PA Process -->
+        <section id="performance" class="content-section">
+            <div class="section-header">
+                <h2><i class="fas fa-project-diagram"></i> กระบวนการขับเคลื่อนคุณภาพผู้เรียน (PA)</h2>
+            </div>
+            <div class="infographic-timeline">
+                <div class="time-node">
+                    <div class="node-num">01</div>
+                    <div class="node-content">
+                        <h4>PLAN (วางแผน)</h4>
+                        <p>วิเคราะห์สภาพปัญหาและออกแบบการเรียนรู้เชิงรุก (Active Learning)</p>
+                    </div>
+                </div>
+                <div class="time-node">
+                    <div class="node-num">02</div>
+                    <div class="node-content">
+                        <h4>DO (ปฏิบัติ)</h4>
+                        <p>จัดการเรียนรู้รายวิชาวิทยาการคำนวณ โดยใช้เทคโนโลยีดิจิทัล</p>
+                    </div>
+                </div>
+                <div class="time-node">
+                    <div class="node-num">03</div>
+                    <div class="node-content">
+                        <h4>CHECK (ตรวจสอบ)</h4>
+                        <p>วัดผลสัมฤทธิ์ผ่านระบบออนไลน์และแฟ้มสะสมผลงานดิจิทัล</p>
+                    </div>
+                </div>
+                <div class="time-node">
+                    <div class="node-num">04</div>
+                    <div class="node-content">
+                        <h4>ACT (สรุป)</h4>
+                        <p>รวบรวมข้อมูลเพื่อพัฒนาและสร้างนวัตกรรมการสอนที่ยั่งยืน</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section id="gallery" class="content-section">
+            <div class="section-header">
+                <h2><i class="fas fa-images"></i> หลักฐานภาพกิจกรรมเชิงประจักษ์</h2>
+            </div>
+            <div class="gallery-masonry">
+                <div class="gallery-box"><img src="ภาพกิจกรรม/2.jpg" alt="Activity"></div>
+                <div class="gallery-box"><img src="ภาพกิจกรรม/3.jpg" alt="Activity"></div>
+                <div class="gallery-box"><img src="ภาพกิจกรรม/4.jpg" alt="Activity"></div>
+                <div class="gallery-box"><img src="ภาพกิจกรรม/10.jpg" alt="Activity"></div>
+                <div class="gallery-box"><img src="ภาพกิจกรรม/11.jpg" alt="Activity"></div>
+                <div class="gallery-box"><img src="ภาพกิจกรรม/12.jpg" alt="Activity"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
